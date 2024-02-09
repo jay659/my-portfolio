@@ -1,0 +1,74 @@
+.skills_wrapper{
+    width: 100%;
+    height: auto;
+    clear: both;
+    display: flex;
+}
+.skills_wrapper .left{
+    width: 50%;
+    margin-right: 50px;
+  }
+  .skills_wrapper .right{
+    width: 50%;
+  }
+  .progress {
+    margin: 25px 0;
+  }
+  .title {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 13px;
+  }
+  .title h3 {
+    font-size: 25px;
+    text-transform: capitalize;
+    font-weight: 500;
+  }
+  .barline {
+    height: 7px;
+    background: #c4cbd2;
+    border-radius: 20px;
+  }
+  
+  .countbar {
+    height: 7px;
+    background: #3D5A80;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    position: relative;
+  }
+  .countbar h3 {
+    position: absolute;
+    right: -19px;
+    top: -35px;
+    background: #34495e;
+    padding: 4px 6px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+  }
+  .countbar h3::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    width: 11px;
+    height: 11px;
+    background: #34495e;
+    transform: rotate(45deg) translateX(-60%);
+  }
+  /* grid */
+  /* grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 200px);
+  grid-template-rows:  repeat(2, 200px);
+  grid-gap: 10px;
+}
+
+grid_item {
+  background-color: aqua;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5em;
+} */
