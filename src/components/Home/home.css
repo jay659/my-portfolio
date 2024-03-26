@@ -71,6 +71,9 @@
 
 /* Large */
 @media screen and (min-width: 900px) {
+  .content h2{
+    height: 8rem;
+  }
   .home-container {
     flex-direction: row;
     align-items: center;
