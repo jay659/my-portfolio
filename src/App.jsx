@@ -33,7 +33,7 @@ function App() {
       <Home />
       <AnoutUs />
       <Education education_data={EducationData} />
-      <Experience  />
+      {/* <Experience  /> */}
       <Skills skilldata={Skillsdata}/>
       <Contact />
     </div>

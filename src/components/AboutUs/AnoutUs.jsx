@@ -2,6 +2,7 @@ import React from 'react'
 import './AnoutUs.css'
 import { Heading } from "components/Heading/Heading";
 import { Link } from "react-scroll";
+import profile_image from 'images/profile-image.jpg'
 
 const AnoutUs = () => {
   return (
@@ -18,28 +19,22 @@ const AnoutUs = () => {
             <div className="tf__about_text ">
                 
                 <p className='mb_95'>
-                    Nemo design enim ipsam voluptatem quim voluptas sit aspernatur
-                    aut odit auting fugit sed thisnquia consequuntur magni dolores
-                    eos designer heresm qui ratione
+                With over 2.5 years of professional software industry experience, the individual demonstrates a deep passion for programming and possesses a robust foundation in the field. specialized in foundational languages such as JavaScript , complemented by expertise in Python, ReactJs, and NodeJS.
+
+
                 </p>
-                <Link
-                    className="common_btn"
-                    to={"contact"}
-                    hashSpy={true}
-                    spy={true}
-                    smooth={true}
-                    delay={100}
-                    offset={-100}
-                    duration={500}
-                >
-                    Download CV
-                </Link>
+              
+      <a href="https://drive.google.com/file/d/173ggi4dZ1X2Te2DPYSeSEqrolNJvPY-m/view?usp=sharing" className="common_btn" download="My_CV.pdf">
+        Download My CV
+      </a>
+
+                
             </div>
             </div>
-            <div className="right_45">
+            <div className="right_45 d-flex justify-content-end">
 
             <div className="tf__about_img" data-trigerid="about" >
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuGFjsxZCvbMuKnsJHFywAKXzJh6SsPWVsifY_z36wVT9p38WQ3IQPDPDjhFPDyxv6YQY&usqp=CAU" alt="ZYAN" class="img-fluid w-100" />
+                <img src={profile_image} alt="ZYAN" className="img-fluid w-100 h-85" />
             </div>
             </div>
         </div>

@@ -74,29 +74,29 @@ const Contact = () => {
 						<ul>
 							<li>
 								<div class="logo">
-									<a href="https://github.com/Hardly-Human" target="_blank">
-                  <img src={linkedin} className="svg" alt="Developer" />
+									<a href="https://linkedin.com/in/jay-patel1911" target="_blank">
+                  <img src={linkedin} className="svg" alt="linkedin" />
                   </a>
                 </div>
               </li>
               <li>
 								<div class="logo">
-									<a href="https://github.com/Hardly-Human" target="_blank">
-                  <img src={gmail} className="svg" alt="Developer" />
+									<a href="mailto:p.jaykumar1911@gmail.com" target="_blank">
+                  <img src={gmail} className="svg" alt="gmail" />
                   </a>
                 </div>
               </li>
               <li>
 								<div class="logo">
-									<a href="https://github.com/Hardly-Human" target="_blank">
-                  <img src={github} className="svg" alt="Developer" />
+									<a href="https://github.com/jay659" target="_blank">
+                  <img src={github} className="svg" alt="github" />
                   </a>
                 </div>
               </li>
               <li>
 								<div class="logo">
-									<a href="https://github.com/Hardly-Human" target="_blank">
-                  <img src={instagram} className="svg" alt="Developer" />
+									<a href="https://linkedin.com/in/jay-patel1911" target="_blank">
+                  <img src={instagram} className="svg" alt="instagram" />
                   </a>
                 </div>
               </li>
