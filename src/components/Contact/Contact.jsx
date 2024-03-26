@@ -108,7 +108,7 @@ const Contact = () => {
 								<div class="list_inner">
 									<div class="logo">
 										<a href="https://www.google.com/maps/place/Hyderabad,+Telangana/" target="_blank">
-                    <img src={location} className="svg" alt="Developer" />
+                    <img src={location} className="svg" alt="Location" />
 										</a>
 									</div>
 									<div class="info">
@@ -122,7 +122,7 @@ const Contact = () => {
 								<div class="list_inner">
 									<div class="logo">
 										<a href="mailto:p.jaykumar1911@gmail.com" target="_blank">
-                    <img src={email_2} className="svg" alt="Developer" />
+                    <img src={email_2} className="svg" alt="Email" />
 										</a>
 									</div>
 									<div class="info">

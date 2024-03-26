@@ -58,7 +58,7 @@ class TypeWriter {
     }
 
     // Insert txt into element
-    this.txtElement.innerHTML = `<span class="txt">${this.txt}</span>`;
+    this.txtElement.innerHTML = `<span className="txt">${this.txt}</span>`;
 
     // Initial Type Speed
     let typeSpeed = 100;
@@ -100,15 +100,16 @@ function init() {
 }
   return (
     <section className="home-container" id="home" name="home">
-      <motion.div
+      <div
         className="content"
         variants={contentVariants}
         initial="initial"
         animate="animate"
       >
-         <h2>HI, I'M A
-      <br/><span class="txt-type text-uppercase text-21 fw-800 " data-wait="3000" data-words='[" Full Stack Developer.", " DevOps Engineer."]'></span>
-    </h2>
+        
+        <h2>HI, I'M A
+          <br/><span className="txt-type text-uppercase text-21 fw-800 " data-wait="3000" data-words='[" Full Stack Developer.", " DevOps Engineer."]'></span>
+        </h2>
         <p>I'm Jay Patel. 
         A dedicated Full Stack Developer and proficient DevOps Engineer residing in Calgary, Canada.</p>
        
@@ -124,7 +125,7 @@ function init() {
         >
           Conatct Me
         </Link>
-      </motion.div>
+      </div>
 
       <motion.div
         className="svg"

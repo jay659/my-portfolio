@@ -153,6 +153,8 @@
       MOD: TIMELINE SPLIT
   ----------------------------------------------*/
   @media (min-width: 768px) {
+   
+   
     .timeline-split .timeline, .timeline-centered .timeline {
       display: table;
     }
@@ -305,4 +307,12 @@
 
 .rounded-circle {
   border-radius: 50%!important;
+}
+@media screen and (max-width: 768px) {
+  .right_20{
+    display: none;
+  }
+  .left_80{
+    width: 100%;
+  }
 }

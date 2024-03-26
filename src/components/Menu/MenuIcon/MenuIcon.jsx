@@ -1,18 +1,13 @@
 import React from "react";
+import { useEffect } from "react";
+import sound from "../../../Sound/clicksound.mp3"
 
-import { Howl } from 'howler';
-
-const sound1 = new Howl({
-  src: ['../../../Sound/clicksound.mp3'],
-});
 
 const MenuIcon = ({ handleClick, menuOpen }) => {
-  console.log(menuOpen)
-  const playSound = menuOpen ? sound1 : sound1;
 
   const handleIconClick = () => {
-    playSound.play();
     handleClick();
+    new Audio(sound).play();
   };
 
   return (

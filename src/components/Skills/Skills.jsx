@@ -26,8 +26,8 @@ const Skills = ({ skilldata }) => {
                                             ) : (
                         <FontAwesomeIcon
                             icon={skill.icon}
-                            size="3x"
-                            className={skill.iconColor}
+                           
+                            className={`iconStyle ${skill.iconColor}`}
                         />
                     )}
                     <h2>{skill.name}</h2>

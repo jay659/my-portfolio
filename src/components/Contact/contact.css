@@ -148,6 +148,9 @@ h1{
 }
 
 @media screen and (max-width: 800px) {
+  .contact h1{
+    font-size: 25px;
+  }
   .contact {
     min-height: 55vh;
   }
@@ -161,5 +164,14 @@ h1{
 
   .contact .left {
     display: none;
+  }
+  .social_info ul li{
+    padding-left: 13px;
+  }
+  .social_info ul{
+    margin: auto;
+  }
+  .short_info ul{
+    flex-direction: column;
   }
 }

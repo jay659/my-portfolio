@@ -1,9 +1,9 @@
 .menu {
-  width: 300px;
+  width: 430px;
   height: 100vh;
   position: fixed;
   top: 0;
-  right: -300px;
+  right: -430px;
   z-index: 2;
   background-color: var(--primary-color);
   display: flex;
@@ -42,4 +42,10 @@
   font-size: inherit;
   color: rgba(255, 255, 255, 0.986);
   cursor: pointer;
+}
+@media screen and (min-width: 900px) {
+  .menu {
+    width: 300px;
+    right: -300px;
+  }
 }

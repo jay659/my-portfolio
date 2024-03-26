@@ -203,3 +203,16 @@
 .h-85{
   height: 85%;
 }
+.iconStyle {
+  font-size: 50px; /* Equivalent to '3x' depending on the icon's base size */
+}
+@media screen and (max-width: 768px) {
+  .skill-box img{
+     width: 280px;
+     height: 100%;
+     padding: 10px;
+  }
+  .iconStyle{
+    font-size: 200px;
+  }
+}
