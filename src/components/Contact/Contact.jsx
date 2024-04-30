@@ -8,8 +8,6 @@ import github from "images/github.svg";
 import gmail from "images/gmail.svg";
 import instagram from "images/instagram.svg";
 import linkedin from "images/linkedin.svg";
-import location from "images/location.svg";
-import email_2 from "images/email-2.svg";
 
 // Email Js
 import emailjs from "emailjs-com";
@@ -37,7 +35,6 @@ const Contact = () => {
         form.current,
         `fYtRDo1clPJbBIfZh`
       );
-      console.log("result ", result.text);
     } catch (error) {
       console.log("ERROR", error);
     }
@@ -102,45 +99,15 @@ const Contact = () => {
               </li>
             </ul>
           </div>
-          <div class="short_info wow fadeInUp" data-wow-duration="1.5s">
-						<ul>
-							<li>
-								<div class="list_inner">
-									<div class="logo">
-										<a href="https://www.google.com/maps/place/Hyderabad,+Telangana/" target="_blank">
-                    <img src={location} className="svg" alt="Location" />
-										</a>
-									</div>
-									<div class="info">
-										<h3>Location</h3>
-										<span>Calgary, Canada</span>
-									</div>
-								</div>
-							</li>
-							
-							<li>
-								<div class="list_inner">
-									<div class="logo">
-										<a href="mailto:p.jaykumar1911@gmail.com" target="_blank">
-                    <img src={email_2} className="svg" alt="Email" />
-										</a>
-									</div>
-									<div class="info">
-										<h3>Mail</h3>
-										<span>p.jaykumar1911@gmail.com</span>
-									</div>
-								</div>
-							</li>
-						</ul>
-					</div>
+         
         
 
       <div className="content">
-        <div className="left">
+        {/* <div className="left">
         <iframe src="https://maps.google.com/maps?q=Calgary,Canada&t=&z=8&ie=UTF8&iwloc=&output=embed"
 									frameborder="0" className="map"></iframe>
-        </div>
-        <div className="right">
+        </div> */}
+     
           <form onSubmit={handleSubmit} ref={form}>
             <input
               type="email"
@@ -170,7 +137,6 @@ const Contact = () => {
               </span>
             )}
           </form>
-        </div>
       </div>
     </section>
   );

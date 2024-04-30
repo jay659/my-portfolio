@@ -1,7 +1,6 @@
 import React from 'react'
 import './AnoutUs.css'
 import { Heading } from "components/Heading/Heading";
-import { Link } from "react-scroll";
 import profile_image from 'images/profile-image.jpg'
 
 const AnoutUs = () => {
@@ -17,7 +16,7 @@ const AnoutUs = () => {
         <div className="left_55">
          
 
-          <h1 className='mb_70 ml-20'>A Passionate FullStack Developer based In Calgary, Canada.</h1>
+          <h1 className='mb_70 ml-20'>A Passionate FullStack Developer based In Canada.</h1>
           <div className="tf__about_text">
             <p className='mb_95'>
               With over 2.5 years of professional software industry experience, the individual demonstrates a deep passion for programming and possesses a robust foundation in the field. specialized in foundational languages such as JavaScript , complemented by expertise in Python, ReactJs, and NodeJS.

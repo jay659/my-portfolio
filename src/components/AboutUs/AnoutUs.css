@@ -93,11 +93,11 @@ img {
         display: block;
     }
     .mobile_friendly img{
-        padding-right: 25px;
+        padding: 0 25px;
     }
     .tf__about_img::after {
-        top: -13px;
-        right: -50px;
+        top: -21px;
+        right: -54px;   
     }
     .tf__about_text::after {
         width: 100px;

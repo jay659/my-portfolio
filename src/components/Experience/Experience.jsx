@@ -1,19 +1,32 @@
-import React from "react";
-import "./Experience.css";
-// components
+import React, { useState } from 'react';
 import { Heading } from "components/Heading/Heading";
+import VerticalTabs from './VerticalTabs';
+import './Experience.css';
 
 const Experience = () => {
-    return (
-        <section
-        data-aos="fade-up"
-        className="experience"
-        name="Experience"
-        id="experience"
-      >
-        <Heading text="My Recent Works" style={{ padding: "3rem" }} />
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto impedit consequuntur similique pariatur atque nisi quam quos nobis, quo nostrum aspernatur praesentium dolore error assumenda inventore laudantium est ut rerum?</p>
-        </section>
-    )
-}
+  const [activeTab, setActiveTab] = useState('tab1');
+
+  const openTab = (tabName) => {
+    setActiveTab(tabName);
+  };
+
+  return (
+    <section
+
+      className="Experience"
+      name="Experience"
+      id="experience"
+    >
+      <Heading text="Experience" style={{ padding: "3rem" }} />
+      <div className="experience-quote">
+        <p className='quote'>“Experience is not what happens to a man; it is what a man does with what happens to him.”</p>
+<p className='author'> - Aldous Huxley, Texts & Pretexts: An Anthology With Commentaries</p>
+
+      </div>
+      <VerticalTabs />
+   
+    </section>
+  );
+};
+
 export default Experience;

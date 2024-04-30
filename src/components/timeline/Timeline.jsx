@@ -31,7 +31,7 @@ const Timeline = ({education_data}) => {
                     <div className="right_20 align_vertically">
                         <div className="featured-box style-4">
                             <div className="featured-box-icon text-25 fw-700 bg-primary rounded-circle">
-                            <span >4.3</span>
+                            <span>{item.gpa}</span>
                             </div>
                             <h3 className="text-7 fw-700">
                                 GPA

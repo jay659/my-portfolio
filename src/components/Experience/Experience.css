@@ -1,0 +1,11 @@
+.experience-quote{
+  display: grid;
+  place-items: center;
+}
+.author{
+  color: #8898AA;
+  line-height: 2;
+}
+.Experience{
+  width: 100%;
+}

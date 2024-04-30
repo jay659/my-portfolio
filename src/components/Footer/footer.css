@@ -1,0 +1,30 @@
+.footer__link {
+    font-size: 1.6rem;
+    font-weight: 800;
+    color:  var(--primary-color);
+    text-decoration: none;
+}
+.link {
+    padding: .3rem 0;
+    position: relative;
+}
+.link:hover {
+    color: var(--primary-color);
+}
+.link:focus:before, .link:hover:before {
+    width: 100%;
+}
+.link:before {
+    content: "";
+    display: inline;
+    width: 0;
+    height: .2rem;
+    position: absolute;
+    bottom: 0;
+    background-color: var(--primary-color);
+    transition: width .2s ease-in;
+}
+.footer {
+    padding: 3rem 0;
+    margin-top: 1rem;
+}

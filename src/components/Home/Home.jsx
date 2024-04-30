@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // SVG
 import man from "images/dev.svg";
@@ -15,7 +15,6 @@ const contentVariants = {
     translateX: "-100vw",
     opacity: 0,
   },
-
   animate: {
     translateX: "0vw",
     opacity: 1,
@@ -26,112 +25,53 @@ const contentVariants = {
   },
 };
 
+const TypeWriter = ({ words, wait }) => {
+  const [idx, setIdx] = useState(0);
+  const [text, setText] = useState('');
+  const [isDeleting, setIsDeleting] = useState(false);
 
+  useEffect(() => {
+    const current = idx % words.length;
+    const fullText = words[current];
+
+    const handleTyping = () => {
+      setText(isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1));
+
+      if (!isDeleting && text === fullText) {
+        setTimeout(() => setIsDeleting(true), wait);
+      } else if (isDeleting && text === '') {
+        setIsDeleting(false);
+        setIdx(idx + 1);
+      }
+    };
+
+    const speed = isDeleting ? 100 / 2 : 100;
+    const typingSpeed = !isDeleting && text === fullText ? wait : speed;
+
+    const timer = setTimeout(handleTyping, typingSpeed);
+
+    return () => clearTimeout(timer);
+  }, [text, isDeleting, idx, words, wait]);
+
+  return <span className="txt-type text-uppercase text-21 fw-800">{text}</span>;
+};
 
 const Home = () => {
-  
-// ES6 for writing effect
-class TypeWriter {
-  constructor(txtElement, words, wait = 3000) {
-    this.txtElement = txtElement;
-    this.words = words;
-    this.txt = '';
-    this.wordIndex = 0;
-    this.wait = parseInt(wait, 10);
-    this.type();
-    this.isDeleting = false;
-  }
+  const words = [" Full Stack Developer.", " DevOps Engineer."];
+  const wait = 3000;
 
-  type() {
-    // Current index of word
-    const current = this.wordIndex % this.words.length;
-    // Get full text of current word
-    const fullTxt = this.words[current];
-
-    // Check if deleting
-    if(this.isDeleting) {
-      // Remove char
-      this.txt = fullTxt.substring(0, this.txt.length - 1);
-    } else {
-      // Add char
-      this.txt = fullTxt.substring(0, this.txt.length + 1);
-    }
-
-    // Insert txt into element
-    this.txtElement.innerHTML = `<span className="txt">${this.txt}</span>`;
-
-    // Initial Type Speed
-    let typeSpeed = 100;
-
-    if(this.isDeleting) {
-      typeSpeed /= 2;
-    }
-
-    // If word is complete
-    if(!this.isDeleting && this.txt === fullTxt) {
-      // Make pause at end
-      typeSpeed = this.wait;
-      // Set delete to true
-      this.isDeleting = true;
-    } else if(this.isDeleting && this.txt === '') {
-      this.isDeleting = false;
-      // Move to next word
-      this.wordIndex++;
-      // Pause before start typing
-      typeSpeed = 500;
-    }
-
-    setTimeout(() => this.type(), typeSpeed);
-  }
-}
-// end writing effect code
-
-
-// Init On DOM Load
-document.addEventListener('DOMContentLoaded', init);
-
-// Init App
-function init() {
-  const txtElement = document.querySelector('.txt-type');
-  const words = JSON.parse(txtElement.getAttribute('data-words'));
-  const wait = txtElement.getAttribute('data-wait');
-  // Init TypeWriter
-  new TypeWriter(txtElement, words, wait);
-}
   return (
     <section className="home-container" id="home" name="home">
-      <div
-        className="content"
-        variants={contentVariants}
-        initial="initial"
-        animate="animate"
-      >
-        
-        <h2>HI, I'M A
-          <br/><span className="txt-type text-uppercase text-21 fw-800 " data-wait="3000" data-words='[" Full Stack Developer.", " DevOps Engineer."]'></span>
+      <div className="content" variants={contentVariants} initial="initial" animate="animate">
+        <h2>HI, I'M A<br/>
+          <TypeWriter words={words} wait={wait} />
         </h2>
-        <p>I'm Jay Patel. 
-        A dedicated Full Stack Developer and proficient DevOps Engineer residing in Calgary, Canada.</p>
-       
-        <Link
-          className="home-btn"
-          to={"contact"}
-          hashSpy={true}
-          spy={true}
-          smooth={true}
-          delay={100}
-          offset={-100}
-          duration={500}
-        >
-          Conatct Me
+        <p>I'm Jay Patel. A dedicated Full Stack Developer and proficient DevOps Engineer residing in Calgary, Canada.</p>
+        <Link className="home-btn" to={"contact"} hashSpy={true} spy={true} smooth={true} delay={100} offset={-100} duration={500}>
+          Contact Me
         </Link>
       </div>
-
-      <motion.div
-        className="svg"
-        animate={{ translateY: [-20, 0, -20, 0] }}
-        transition={{ yoyo: Infinity, duration: 6 }}
-      >
+      <motion.div className="svg" animate={{ translateY: [-20, 0, -20, 0] }} transition={{ yoyo: Infinity, duration: 6 }}>
         <img src={man} alt="Developer" />
       </motion.div>
     </section>
