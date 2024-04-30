@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.ff1cf98c.css",
-    "main.js": "/my-portfolio/static/js/main.b7df8fee.js",
+    "main.js": "/my-portfolio/static/js/main.4b976af2.js",
     "static/media/InteliEdge.jpg": "/my-portfolio/static/media/InteliEdge.cc23fc970b27df0a54e0.jpg",
     "static/media/finbyz-tech.png": "/my-portfolio/static/media/finbyz-tech.dc57c050c3fbfab43352.png",
     "static/media/profile-image.jpg": "/my-portfolio/static/media/profile-image.0f14992ea218b275c2ba.jpg",
@@ -19,10 +19,10 @@
     "static/media/terraform.svg": "/my-portfolio/static/media/terraform.0913e3eedb1ff8262f9843ff766c9540.svg",
     "static/media/downarrow.svg": "/my-portfolio/static/media/downarrow.39188d44945a496e9d99ea8e4489e05c.svg",
     "main.ff1cf98c.css.map": "/my-portfolio/static/css/main.ff1cf98c.css.map",
-    "main.b7df8fee.js.map": "/my-portfolio/static/js/main.b7df8fee.js.map"
+    "main.4b976af2.js.map": "/my-portfolio/static/js/main.4b976af2.js.map"
   },
   "entrypoints": [
     "static/css/main.ff1cf98c.css",
-    "static/js/main.b7df8fee.js"
+    "static/js/main.4b976af2.js"
   ]
 }
