@@ -15,14 +15,15 @@ import Education from "components/Education/education";
 import AboutUs from "components/AboutUs/AnoutUs";
 import Experience from "components/Experience/Experience";
 import Skills from "components/Skills/Skills";
+import { Menu } from "components/Menu/Menu";
+import Footer from "components/Footer/Footer";
+import ScrollToTopButton from "components/Footer/ScrollToTopButton";
 
 // Animation
 import Aos from "aos";
 import "aos/dist/aos.css";
 
-// Components
-import { Menu } from "components/Menu/Menu";
-import Footer from "components/Footer/Footer";
+
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,6 +55,7 @@ function App() {
       <Skills skilldata={Skillsdata}/>
       <Contact />
       <Footer />
+      <ScrollToTopButton />
     </div>
     </>
   );

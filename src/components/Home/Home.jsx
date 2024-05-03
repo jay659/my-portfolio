@@ -66,7 +66,7 @@ const Home = () => {
         <h2>HI, I'M A<br/>
           <TypeWriter words={words} wait={wait} />
         </h2>
-        <p>I'm Jay Patel. A dedicated Full Stack Developer and proficient DevOps Engineer residing in Calgary, Canada.</p>
+        <p>I'm Jay Patel. A dedicated Full Stack Developer and proficient DevOps Engineer residing in Canada.</p>
         <Link className="home-btn" to={"contact"} hashSpy={true} spy={true} smooth={true} delay={100} offset={-100} duration={500}>
           Contact Me
         </Link>
