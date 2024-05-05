@@ -1,6 +1,5 @@
 import React from "react";
-import { useEffect } from "react";
-import sound from "../../../Sound/clicksound.mp3"
+import sound from "Sound/clicksound.mp3"
 
 
 const MenuIcon = ({ handleClick, menuOpen }) => {

@@ -20,7 +20,6 @@ import Footer from "components/Footer/Footer";
 import ScrollToTopButton from "components/Footer/ScrollToTopButton";
 
 // Animation
-import Aos from "aos";
 import "aos/dist/aos.css";
 
 
@@ -29,23 +28,15 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true); // State to handle loading
 
-  useEffect(() => {
-    Aos.init({ duration: 2000, offset: 10 });
-    // Set a timeout to simulate loading time
-    const timer = setTimeout(() => {
-      setLoading(false);
-    }, 1000); 
-  }, []);
 
   // Render the Preloader if loading is true, else render the app content
-  if (loading) {
-    return <Preloader />;
-  }
+
 
   return (
     
     <>
     <div className="app-container">
+    <Preloader />
       <Nav menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Menu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       <Home />
