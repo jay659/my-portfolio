@@ -18,7 +18,7 @@ const Skills = ({ skilldata }) => {
         <Heading text="Skills" style={{ padding: "3rem" }} />
         </section>
         <div className="skills_wrapper">       
-            <div className='skills-details' >
+            <div className='skills-details' data-aos="fade-up">
                 {skilldata.map((skill, index) => (
                 <div className={`skill-box ${skill.shadowColor}`} > 
                     {skill.isimage ? (

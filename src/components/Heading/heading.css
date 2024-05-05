@@ -8,8 +8,8 @@
 
 .heading {
   margin-top: 3rem;
-  color: black;
-  font-weight: 500;
+  color: var(--primary-color);
+  font-weight: 700;
   font-size: 1.7rem;
   text-align: center;
 }

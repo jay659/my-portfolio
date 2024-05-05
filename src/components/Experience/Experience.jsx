@@ -18,7 +18,7 @@ const Experience = () => {
       id="experience"
     >
       <Heading text="Experience" style={{ padding: "3rem" }} />
-      <div className="experience-quote">
+      <div className="experience-quote" data-aos="fade-up">
         <p className='quote'>“Experience is not what happens to a man; it is what a man does with what happens to him.”</p>
 <p className='author'> - Aldous Huxley, Texts & Pretexts: An Anthology With Commentaries</p>
 

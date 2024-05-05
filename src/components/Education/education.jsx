@@ -18,7 +18,7 @@ const Education = ({ education_data }) => {
     >
       <Heading text="Education"  style={{ padding: "3rem" }} />
       <div className="row">
-        <Timeline education_data={education_data} />
+        <Timeline education_data={education_data}  data-aos="fade-up" />
       </div>
     </section>
   );

@@ -3,7 +3,7 @@ import "./timeline.css";
 const Timeline = ({education_data}) => {
     // ... component implementation
     return (
-    <div className="container-fluid">
+    <div className="container-fluid" data-aos="fade-right">
     <div className="row example-basic">
         <div className="col-xs-10 col-xs-offset-1 col-sm-8 col-sm-offset-2">
             <ul className="timeline">

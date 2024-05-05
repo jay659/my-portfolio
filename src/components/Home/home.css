@@ -106,14 +106,6 @@
     width: 30rem;
   }
 }
-
-/* Extra Large */
-@media screen and (min-width: 1025) {
-}
-
-/* XXL */
-@media screen and (min-width: 1201) {
-}
 .txt-type > .txt {
   border-right: 0.2rem solid #777;
 }

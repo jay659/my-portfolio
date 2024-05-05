@@ -21,12 +21,17 @@ import ScrollToTopButton from "components/Footer/ScrollToTopButton";
 
 // Animation
 import "aos/dist/aos.css";
+import Aos from 'aos';
 
 
 
 function App() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [loading, setLoading] = useState(true); // State to handle loading
+  useEffect(() => {
+    Aos.init({ duration: 2000, offset: 10 });
+   
+  }, []);
 
 
   // Render the Preloader if loading is true, else render the app content
