@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/my-portfolio/static/css/main.2f012a61.css",
-    "main.js": "/my-portfolio/static/js/main.09793b47.js",
+    "main.css": "/my-portfolio/static/css/main.8198ef5f.css",
+    "main.js": "/my-portfolio/static/js/main.e99b66a9.js",
     "static/media/InteliEdge.jpg": "/my-portfolio/static/media/InteliEdge.cc23fc970b27df0a54e0.jpg",
     "static/media/finbyz-tech.png": "/my-portfolio/static/media/finbyz-tech.dc57c050c3fbfab43352.png",
     "static/media/profile-image.jpg": "/my-portfolio/static/media/profile-image.0f14992ea218b275c2ba.jpg",
@@ -19,11 +19,11 @@
     "static/media/terraform.svg": "/my-portfolio/static/media/terraform.0913e3eedb1ff8262f9843ff766c9540.svg",
     "static/media/up-arrow-icon.svg": "/my-portfolio/static/media/up-arrow-icon.4745a6687154e7d7e6f878d508439815.svg",
     "static/media/downarrow.svg": "/my-portfolio/static/media/downarrow.39188d44945a496e9d99ea8e4489e05c.svg",
-    "main.2f012a61.css.map": "/my-portfolio/static/css/main.2f012a61.css.map",
-    "main.09793b47.js.map": "/my-portfolio/static/js/main.09793b47.js.map"
+    "main.8198ef5f.css.map": "/my-portfolio/static/css/main.8198ef5f.css.map",
+    "main.e99b66a9.js.map": "/my-portfolio/static/js/main.e99b66a9.js.map"
   },
   "entrypoints": [
-    "static/css/main.2f012a61.css",
-    "static/js/main.09793b47.js"
+    "static/css/main.8198ef5f.css",
+    "static/js/main.e99b66a9.js"
   ]
 }
