@@ -7,7 +7,7 @@
 
 .skills-details {
   --content-width: 80vw;
-  --gutter: 40px;
+  --gutter: 50px;
   --columns: 1;
   --row-size: calc(
     ( var(--content-width) - (var(--gutter) * (var(--columns) - 1))
@@ -41,6 +41,7 @@
   display: grid;
   place-items: center;
   border-radius: 0.25rem;
+  transition: all 0.3s ease-in;
 }
 .text-blue-500 {
   --tw-text-opacity: 1;
@@ -196,15 +197,15 @@
 }
 
 .skill_icons{
-  width: 3rem;
-  height: 3rem;
+  width: 5rem;
+  height: 4rem;
   object-fit: contain;
 }
 .h-85{
   height: 85%;
 }
 .iconStyle {
-  font-size: 50px; /* Equivalent to '3x' depending on the icon's base size */
+  font-size: 80px; /* Equivalent to '3x' depending on the icon's base size */
 }
 @media screen and (max-width: 768px) {
   .skill-box img{
@@ -214,5 +215,39 @@
   }
   .iconStyle{
     font-size: 200px;
+  }
+}
+@media (min-width: 1024px) {
+  .skill-icon {
+    transition: all 0.3s ease-in-out 0.1s;
+  }
+  .skill-box:hover .skill-icon {
+    transform: scale(1.5) translateY(-20px);
+  }
+  .skill-box:hover .skill-icon .iconStyle, .skill-box:hover .skill-icon img {
+    animation: bouncing 0.5s 0.3s;
+  }
+  .skill-box:hover {
+    transform: scale(1.1) !important;
+  }
+  .title {
+    transition: all 0.3s ease-in-out;
+  }
+  .skill-box:hover .title {
+    letter-spacing: 2px;
+  }
+  @keyframes bouncing {
+    from, to {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
   }
 }

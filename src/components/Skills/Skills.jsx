@@ -18,9 +18,10 @@ const Skills = ({ skilldata }) => {
         <Heading text="Skills" style={{ padding: "3rem" }} />
         </section>
         <div className="skills_wrapper">       
-            <div className='skills-details' data-aos="fade-up">
+            <div className='skills-details' >
                 {skilldata.map((skill, index) => (
-                <div className={`skill-box ${skill.shadowColor}`} > 
+                <div className={`skill-box ${skill.shadowColor}`} data-aos="fade-up" > 
+                <div className="skill-icon">
                     {skill.isimage ? (
                         <img src={skill.icon} alt={skill.name} className="skill_icons" />
                                             ) : (
@@ -30,7 +31,8 @@ const Skills = ({ skilldata }) => {
                             className={`iconStyle ${skill.iconColor}`}
                         />
                     )}
-                    <h2>{skill.name}</h2>
+                </div>
+                    <h2 className='title'>{skill.name}</h2>
                 </div> ))
                 }       
             </div>
