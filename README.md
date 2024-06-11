@@ -1,13 +1,5 @@
 # 👨‍💻 Personal Portfolio
 
-### Link :link: 
-
-## Images
-
-
-
-## Mobile Responsive
-
 
 
 ## Tech Stack
