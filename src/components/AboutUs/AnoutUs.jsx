@@ -28,11 +28,7 @@ const AnoutUs = () => {
 
           </div>
         </div>
-        <div className="right_45 d-flex justify-content-end">
-          <div className="tf__about_img" data-trigerid="about" >
-            <img src={profile_image} alt="ZYAN" className="img-fluid w-100 h-85" />
-          </div>
-        </div>
+        
       </div>
 
     </section>
