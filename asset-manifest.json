@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-portfolio/static/css/main.8198ef5f.css",
-    "main.js": "/my-portfolio/static/js/main.e99b66a9.js",
+    "main.js": "/my-portfolio/static/js/main.db26b9d1.js",
     "static/media/InteliEdge.jpg": "/my-portfolio/static/media/InteliEdge.cc23fc970b27df0a54e0.jpg",
     "static/media/finbyz-tech.png": "/my-portfolio/static/media/finbyz-tech.dc57c050c3fbfab43352.png",
     "static/media/profile-image.jpg": "/my-portfolio/static/media/profile-image.0f14992ea218b275c2ba.jpg",
@@ -9,21 +9,21 @@
     "static/media/dev.svg": "/my-portfolio/static/media/dev.5ac54af8cdecb6b477d6597a6bae015b.svg",
     "static/media/kubernetes.svg": "/my-portfolio/static/media/kubernetes.69f6c4411fc98e5e50dafe77f8ea8ea1.svg",
     "static/media/aws.svg": "/my-portfolio/static/media/aws.3dc6e83c8f57a34a5de9a4f090d9e47a.svg",
-    "static/media/github.svg": "/my-portfolio/static/media/github.d3f4fabebf6e7a0de0649aa8e73fa06e.svg",
+    "static/media/github.svg": "/my-portfolio/static/media/github.107d77e8f6024a7431dd3810ebee1c60.svg",
     "static/media/python.svg": "/my-portfolio/static/media/python.888cd80d31702f3cdaa2a0e2d56c436c.svg",
     "static/media/instagram.svg": "/my-portfolio/static/media/instagram.33d2d2a51969fab5dcfdd3cf4365391a.svg",
     "static/media/docker.svg": "/my-portfolio/static/media/docker.526bf95bd6ea74953f99ef403f30cbfd.svg",
     "index.html": "/my-portfolio/index.html",
-    "static/media/gmail.svg": "/my-portfolio/static/media/gmail.9511675b9e685961258dece8e797ecb2.svg",
+    "static/media/gmail.svg": "/my-portfolio/static/media/gmail.30e7ba42f0c74e9158383ca4b6fd8c84.svg",
     "static/media/linkedin.svg": "/my-portfolio/static/media/linkedin.b45335c09e5ce01abb2f1e640b5673c4.svg",
     "static/media/terraform.svg": "/my-portfolio/static/media/terraform.0913e3eedb1ff8262f9843ff766c9540.svg",
     "static/media/up-arrow-icon.svg": "/my-portfolio/static/media/up-arrow-icon.4745a6687154e7d7e6f878d508439815.svg",
     "static/media/downarrow.svg": "/my-portfolio/static/media/downarrow.39188d44945a496e9d99ea8e4489e05c.svg",
     "main.8198ef5f.css.map": "/my-portfolio/static/css/main.8198ef5f.css.map",
-    "main.e99b66a9.js.map": "/my-portfolio/static/js/main.e99b66a9.js.map"
+    "main.db26b9d1.js.map": "/my-portfolio/static/js/main.db26b9d1.js.map"
   },
   "entrypoints": [
     "static/css/main.8198ef5f.css",
-    "static/js/main.e99b66a9.js"
+    "static/js/main.db26b9d1.js"
   ]
 }
