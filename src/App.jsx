@@ -12,7 +12,7 @@ import Nav from "components/Nav/Nav";
 import Home from "components/Home/Home";
 import Contact from "components/Contact/Contact";
 import Education from "components/Education/education";
-import AboutUs from "components/AboutUs/AnoutUs";
+import AboutUs from "components/AboutUs/AboutUs";
 import Experience from "components/Experience/Experience";
 import Skills from "components/Skills/Skills";
 import { Menu } from "components/Menu/Menu";

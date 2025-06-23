@@ -1,9 +1,9 @@
 import React from 'react'
-import './AnoutUs.css'
+import './AboutUs.css'
 import { Heading } from "components/Heading/Heading";
 import profile_image from 'images/profile-image.jpg'
 
-const AnoutUs = () => {
+const AboutUs = () => {
   return (
     <section
 
@@ -35,4 +35,4 @@ const AnoutUs = () => {
   )
 }
 
-export default AnoutUs
+export default AboutUs
